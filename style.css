@@ -1,0 +1,126 @@
+* { 
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins' , sans-serif;
+    background-color: var(--background-color);
+}
+
+:root { 
+    --background-color: #1C1C1C;
+    --button-top-color: #D4D4D2;
+    --button-color: #505050;
+    --button-right-color: #FF9500;
+    --text-color: white;
+    --text-color-top: black;
+    --text-color-right: white;
+}
+
+.lightTheme {
+    --background-color: white;
+    --button-top-color: #7c7c7c; 
+    --button-color: #D4D4D2;
+    --button-right-color: #3b3b3b;
+    --text-color: black;
+    --text-color-top: white;
+    --text-color-right:black;
+}
+
+.flex {
+    display: flex;
+}
+
+.justify-content{
+    justify-content: space-between;
+}
+
+.align-itens {
+    align-items: center;
+}
+
+main { 
+    max-width: 30%;
+    margin: 0 auto;
+}
+
+header {
+    margin: 0 0 0.50rem 0;
+    color: var(--text-color);
+}
+
+#switchTheme {
+    background-color: transparent;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+#switchTheme:hover {
+    scale: 1.1;
+    transition: 0.10s;
+    font-weight: 700;
+}
+
+#calculatorButtons {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 0.50rem;
+    margin: 0.50rem 0;
+}
+
+button:hover{ 
+    filter: brightness(0.8)
+}
+
+button { 
+    padding: 0.75rem 0.5rem;
+    cursor: pointer;
+    border: none;
+    transition: 0.15s;
+    border-radius: 0.20rem;
+    background-color: var(--button-color);
+    color: var(--text-color);
+}
+
+input {
+    width: 100%;
+    border: 2px solid black;
+    border-radius: 0.50rem;
+    padding: 0.75rem 0.75rem;
+    text-align: right;
+    font-size: 1rem;
+    background-color: var(--button-color);
+    color: var(--text-color);
+}
+
+.top { 
+    background-color: var(--button-top-color);
+    color: var(--text-color-top);
+    font-weight: 700;
+}
+
+.right {
+    background-color: var(--button-right-color);
+    color: var(--text-color-right);
+    font-weight: 700;
+}
+
+#resultInput-label {
+    margin: 0 1.20rem;
+    max-width: 33%;
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--text-color);
+}
+
+#calcDiv {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap: 0.50rem;
+    margin: 0.50rem 0;
+}
+
+#calcDiv > button {
+    border-radius: 50px;
+    font-weight: 700;
+    background-color: var(--button-right-color);
+}

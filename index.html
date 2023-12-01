@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Patrick Azevedo">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="./imgs/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <title>Calc JS</title>
+</head>
+<body>
+    <main>
+        <header class="flex justify-content align-itens">
+            <h1>Calc JS</h1>
+            <button id="switchTheme">Trocar tema</button>
+        </header>
+        <div id="calcDiv">
+            <input type="text" name="calcArea" id="calcArea" autofocus>
+            <button id="delButton">del</button>
+        </div>
+        <div id="calculatorButtons">
+            <button id="clearButton" class="top">C</button>
+            <button class="calcKey top" value="(">(</button>
+            <button class="calcKey top" value=")">)</button>
+            <button class="calcKey right" value="/">/</button>
+            <button class="calcKey" value="7">7</button>
+            <button class="calcKey" value="8">8</button>
+            <button class="calcKey" value="9">9</button>
+            <button class="calcKey right" value="*">*</button>
+            <button class="calcKey" value="4">4</button>
+            <button class="calcKey" value="5">5</button>
+            <button class="calcKey" value="6">6</button>
+            <button class="calcKey right" value="-">-</button>
+            <button class="calcKey" value="1">1</button>
+            <button class="calcKey" value="2">2</button>
+            <button class="calcKey" value="3">3</button>
+            <button class="calcKey right" value="+">+</button>
+            <button class="calcKey" value="0">0</button>
+            <button class="calcKey" value=".">.</button>
+            <button class="calcKey" value="%">mod</button>
+            <button id="equalButton" class="right">=</button>
+        </div>
+        <section class="flex justify-content align-itens">
+            <label id="resultInput-label"  for="resultInput">Resultado: </label>
+            <input type="text" name="resultInput" id="resultInput" disabled >
+        </section>
+    </main>
+</body>
+</html>
