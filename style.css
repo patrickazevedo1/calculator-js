@@ -39,7 +39,7 @@
 }
 
 main { 
-    max-width: 30%;
+    max-width: 50%;
     margin: 0 auto;
 }
 
@@ -123,4 +123,10 @@ input {
     border-radius: 50px;
     font-weight: 700;
     background-color: var(--button-right-color);
+}
+
+@media (max-width: 900px) {
+    main {
+        max-width: 80%;
+    }
 }
